@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glitter.Shared", "Glitter.Shared\Glitter.Shared.csproj", "{3CF65902-2013-4B13-90DC-11A1516836F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glitter.Entities", "Glitter.Entities\Glitter.Entities.csproj", "{CA357D67-2D48-4405-A95F-68028D3E220A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glitter.BLL", "Glitter.BLL\Glitter.BLL.csproj", "{416DE13E-5E8C-4030-8B30-B6162BF066F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glitter.PresentationLayer", "Glitter.PresentationLayer\Glitter.PresentationLayer.csproj", "{2F097C48-8A36-4F33-BBF6-F068C0462528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glitter.DAL", "Glitter.DAL\Glitter.DAL.csproj", "{758D655C-4732-422D-B55D-DA3925968F72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CF65902-2013-4B13-90DC-11A1516836F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF65902-2013-4B13-90DC-11A1516836F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF65902-2013-4B13-90DC-11A1516836F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF65902-2013-4B13-90DC-11A1516836F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA357D67-2D48-4405-A95F-68028D3E220A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA357D67-2D48-4405-A95F-68028D3E220A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA357D67-2D48-4405-A95F-68028D3E220A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA357D67-2D48-4405-A95F-68028D3E220A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416DE13E-5E8C-4030-8B30-B6162BF066F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416DE13E-5E8C-4030-8B30-B6162BF066F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416DE13E-5E8C-4030-8B30-B6162BF066F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416DE13E-5E8C-4030-8B30-B6162BF066F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F097C48-8A36-4F33-BBF6-F068C0462528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F097C48-8A36-4F33-BBF6-F068C0462528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F097C48-8A36-4F33-BBF6-F068C0462528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F097C48-8A36-4F33-BBF6-F068C0462528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{758D655C-4732-422D-B55D-DA3925968F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{758D655C-4732-422D-B55D-DA3925968F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{758D655C-4732-422D-B55D-DA3925968F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{758D655C-4732-422D-B55D-DA3925968F72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8813D01F-DD0A-4802-B93A-6E5AF65B117B}
+	EndGlobalSection
+EndGlobal

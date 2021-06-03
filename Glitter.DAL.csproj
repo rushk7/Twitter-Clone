@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{758D655C-4732-422D-B55D-DA3925968F72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glitter.DAL</RootNamespace>
+    <AssemblyName>Glitter.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlitterContext.cs" />
+    <Compile Include="Migrations\201812151312067_first.cs" />
+    <Compile Include="Migrations\201812151312067_first.Designer.cs">
+      <DependentUpon>201812151312067_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812151331452_second.cs" />
+    <Compile Include="Migrations\201812151331452_second.Designer.cs">
+      <DependentUpon>201812151331452_second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812151722016_thrid.cs" />
+    <Compile Include="Migrations\201812151722016_thrid.Designer.cs">
+      <DependentUpon>201812151722016_thrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812171334045_forth.cs" />
+    <Compile Include="Migrations\201812171334045_forth.Designer.cs">
+      <DependentUpon>201812171334045_forth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812171724007_fifth.cs" />
+    <Compile Include="Migrations\201812171724007_fifth.Designer.cs">
+      <DependentUpon>201812171724007_fifth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812191851224_sixth.cs" />
+    <Compile Include="Migrations\201812191851224_sixth.Designer.cs">
+      <DependentUpon>201812191851224_sixth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812191955258_seventh.cs" />
+    <Compile Include="Migrations\201812191955258_seventh.Designer.cs">
+      <DependentUpon>201812191955258_seventh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812191957239_eigth.cs" />
+    <Compile Include="Migrations\201812191957239_eigth.Designer.cs">
+      <DependentUpon>201812191957239_eigth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812200432459_eigth1.cs" />
+    <Compile Include="Migrations\201812200432459_eigth1.Designer.cs">
+      <DependentUpon>201812200432459_eigth1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadRepositories.cs" />
+    <Compile Include="WriteRepositories.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Glitter.Entities\Glitter.Entities.csproj">
+      <Project>{ca357d67-2d48-4405-a95f-68028d3e220a}</Project>
+      <Name>Glitter.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Glitter.Shared\Glitter.Shared.csproj">
+      <Project>{3cf65902-2013-4b13-90dc-11a1516836f0}</Project>
+      <Name>Glitter.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812151312067_first.resx">
+      <DependentUpon>201812151312067_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812151331452_second.resx">
+      <DependentUpon>201812151331452_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812151722016_thrid.resx">
+      <DependentUpon>201812151722016_thrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812171334045_forth.resx">
+      <DependentUpon>201812171334045_forth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812171724007_fifth.resx">
+      <DependentUpon>201812171724007_fifth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812191851224_sixth.resx">
+      <DependentUpon>201812191851224_sixth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812191955258_seventh.resx">
+      <DependentUpon>201812191955258_seventh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812191957239_eigth.resx">
+      <DependentUpon>201812191957239_eigth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812200432459_eigth1.resx">
+      <DependentUpon>201812200432459_eigth1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
